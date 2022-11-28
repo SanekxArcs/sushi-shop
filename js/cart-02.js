@@ -23,33 +23,33 @@ window.addEventListener('click', function (event) {
         } else {
         const cardItemHTML = `
             <div class="cart-item" data-id="${productInfo.id}">
-    \t\t\t\t\t\t\t\t<div class="cart-item__top">
-    \t\t\t\t\t\t\t\t\t<div class="cart-item__img">
-    \t\t\t\t\t\t\t\t\t\t<img src="${productInfo.imgSrc}" alt="${productInfo.imgSrc}">
-    \t\t\t\t\t\t\t\t\t</div>
-    \t\t\t\t\t\t\t\t\t<div class="cart-item__desc">
-    \t\t\t\t\t\t\t\t\t\t<div class="cart-item__title">${productInfo.title}</div>
-    \t\t\t\t\t\t\t\t\t\t<div class="cart-item__weight">${productInfo.itemsInBox} / ${productInfo.weight}</div>
-    
-    \t\t\t\t\t\t\t\t\t\t<!-- cart-item__details -->
-    \t\t\t\t\t\t\t\t\t\t<div class="cart-item__details">
-    
-    \t\t\t\t\t\t\t\t\t\t\t<div class="items items--small counter-wrapper">
-    \t\t\t\t\t\t\t\t\t\t\t\t<div class="items__control" data-action="minus">-</div>
-    \t\t\t\t\t\t\t\t\t\t\t\t<div class="items__current" data-counter="">${productInfo.counter}</div>
-    \t\t\t\t\t\t\t\t\t\t\t\t<div class="items__control" data-action="plus">+</div>
-    \t\t\t\t\t\t\t\t\t\t\t</div>
-    
-    \t\t\t\t\t\t\t\t\t\t\t<div class="price">
-    \t\t\t\t\t\t\t\t\t\t\t\t<div class="price__currency">${productInfo.price}</div>
-    \t\t\t\t\t\t\t\t\t\t\t</div>
-    
-    \t\t\t\t\t\t\t\t\t\t</div>
-    \t\t\t\t\t\t\t\t\t\t<!-- // cart-item__details -->
-    
-    \t\t\t\t\t\t\t\t\t</div>
-    \t\t\t\t\t\t\t\t</div>
-    \t\t\t\t\t\t\t</div>`;
+                <div class="cart-item__top">
+                    <div class="cart-item__img">
+                        <img src="${productInfo.imgSrc}" alt="${productInfo.imgSrc}">
+                    </div>
+        <div class="cart-item__desc">
+            <div class="cart-item__title">${productInfo.title}</div>
+                <div class="cart-item__weight">${productInfo.itemsInBox} / ${productInfo.weight}</div>
+                
+                <!-- cart-item__details -->
+                    <div class="cart-item__details">
+                    
+                    <div class="items items--small counter-wrapper">
+                        <div class="items__control" data-action="minus">-</div>
+                        <div class="items__current" data-counter="">${productInfo.counter}</div>
+                        <div class="items__control" data-action="plus">+</div>
+                    </div>
+                    
+                    <div class="price">
+                        <div class="price__currency">${productInfo.price}</div>
+                    </div>
+                
+                </div>
+            <!-- // cart-item__details -->
+            
+            </div>
+        </div>
+    </div>`;
 
             cartWrapper.insertAdjacentHTML('beforeend', cardItemHTML);
 
